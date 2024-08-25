@@ -33,7 +33,7 @@ setInterval(() => {
   const date = new Date();
 
   hours.value = String(
-    date.getHours() < 10 ? date.getHours() + "0" : date.getHours()
+    date.getHours() < 10 ? "0" + date.getHours() : date.getHours()
   );
   minutes.value = String(
     date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()
