@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import Oclock from './components/oclock.vue';
+import Oclock from './components/Oclock.vue';
 </script>
 
 <style scoped></style>
