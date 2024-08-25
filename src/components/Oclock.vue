@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { ref, watchEffect } from "vue";
-import Loading from "@/components/Loading.vue"
+import Loading from "@/components/Loading.vue";
 
 let hours = ref<string>("");
 let minutes = ref<string>("");
@@ -90,6 +90,13 @@ watchEffect(() => {
           font-size: 150px;
         }
       }
+
+      div:nth-of-type(1),
+      div:nth-of-type(3),
+      div:nth-of-type(5) {
+        text-align: center;
+        width: 160px;
+      }
     }
   }
 }
@@ -102,6 +109,13 @@ watchEffect(() => {
           font-size: 100px;
         }
       }
+
+      div:nth-of-type(1),
+      div:nth-of-type(3),
+      div:nth-of-type(5) {
+        text-align: center;
+        width: 110px;
+      }
     }
   }
 }
@@ -111,8 +125,15 @@ watchEffect(() => {
     header {
       div {
         span {
-          font-size: 6 0px;
+          font-size: 60px;
         }
+      }
+
+      div:nth-of-type(1),
+      div:nth-of-type(3),
+      div:nth-of-type(5) {
+        text-align: center;
+        width: 70px;
       }
     }
   }
